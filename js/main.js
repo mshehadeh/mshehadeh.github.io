@@ -22,9 +22,9 @@ $(document).ready(function() {
     var stringsToType = [
       "is a software engineer.",
       "makes websites.",
-      "can school you in fifa.",
+      "can school you in fifa. \uD83D\uDD25",
       "enjoys solving problems.",
-      "writes code."
+      "writes code. \uD83D\uDC4C"
     ]
 
     var time = 0;
@@ -51,6 +51,10 @@ function typeTextAndDelete(goalString) {
 
   for (var i = 0; i < goalString.length; i++) {
     currentString = currentString + goalString[i];
+    if (goalString.charCodeAt(i) > 255) {
+      currentString = currentString + goalString[i+1];
+      i =  i + 1;
+    }
     setTimeout(addText, multiple * i, currentString);
   }
 
@@ -65,6 +69,10 @@ function typeText(goalString) {
 
   for (var i = 0; i < goalString.length; i++) {
     currentString = currentString + goalString[i];
+    if (goalString.charCodeAt(i) > 255) {
+      currentString = currentString + goalString[i+1];
+      i =  i + 1;
+    }
     setTimeout(addText, multiple * i, currentString);
   }
 }
