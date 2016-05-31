@@ -39,9 +39,7 @@ function drawMoneyInChart() {
           animation:{
               animateScale:true
           }, options: {
-          tooltips: {
-              enabled: false
-          }
+              showTooltips: true
       }
   }
   });
@@ -74,9 +72,7 @@ function drawMoneyOutChart() {
           animation:{
               animateScale:true
           }, options: {
-          tooltips: {
-              enabled: false
-          }
+              showTooltips: true
       }
   }
   });
