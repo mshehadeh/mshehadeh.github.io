@@ -1,0 +1,233 @@
+/***********
+* Font load
+************/
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/**************
+* Body css
+***************/
+.wrapper {
+  min-height: 100vh;
+  font-family: "Roboto-Regular", serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section:nth-child(1) {
+  background: white;
+}
+
+section:nth-child(2) {
+  background: #F64747;
+}
+
+section:nth-child(3) {
+  background: #22A7F0;
+}
+
+section:nth-child(4) {
+  background: #F9690E;
+}
+
+section div {
+  display: block;
+}
+
+section .money_div {
+  text-align: center;
+  margin-top: 40%;
+}
+
+section .money_div div {
+  display: inline-block;
+}
+
+.nav_wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.nav {
+  margin: 0 0 100px 30px;
+}
+
+.nav_counter {
+  font-size: 24px;
+  transition: all 0.15s ease-out;
+}
+
+.nav_title {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.nav_body {
+  font-weight: 100;
+  font-size: 18px;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+
+.nav li:after {
+  content: '';
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  transition: all 0.15s ease-out;
+}
+
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+
+.nav li a:focus {
+  background-color: transparent;
+}
+
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+
+.nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+
+.nav li.active .nav_counter {
+  font-size: 48px;
+}
+
+.nav li.active .nav_title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.nav li.active .nav_body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+
+h1 {
+  text-align: center;
+  font-size: 66px;
+}
+
+h1 small {
+  font-size: 54%;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+h2 small {
+  display: block;
+  color: white;
+}
+
+.chart_holder {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.money_in {
+  float: left;
+}
+
+.money_out {
+  float: right;
+}
+
+/************
+* Media queries
+*************/
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+  h1 small {
+    font-size: 40%;
+  }
+  .money_in, .money_out {
+    float: none;
+    display: block !important;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 45px;
+  }
+  h1 small {
+    font-size: 40%;
+  }
+  .nav {
+    display: none;
+  }
+  .nav li.active {
+    pointer-events: none;
+    padding-left: 0em;
+  }
+  .nav li.active:after {
+    width: 35px;
+    height: 400px;
+    top: 35px;
+  }
+  .nav li.active .nav_counter {
+    font-size: 48px;
+  }
+  .nav li.active .nav_title {
+    display: none;
+  }
+  .nav li.active .nav_body {
+    display: none;
+  }
+}
