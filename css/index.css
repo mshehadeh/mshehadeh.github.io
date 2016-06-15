@@ -5,3 +5,15 @@
 .selected {
   background-color: #aebcb9;
 }
+
+.svg-holder > a, .svg-holder img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+
+.svg-holder {
+  text-align: center;
+  padding-top:50px;  
+}
