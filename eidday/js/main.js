@@ -41,7 +41,7 @@ function drawMoneyInChart() {
           }, options: {
               onAnimationComplete: function() {
                   this.showTooltip(this.segments, true);
-                  
+
               }
       }
   }
@@ -77,7 +77,7 @@ function drawMoneyOutChart() {
           }, options: {
                             onAnimationComplete: function() {
                   this.showTooltip(this.segments, true);
-                  
+
               }
       }
   }
