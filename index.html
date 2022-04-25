@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Mustafa Shehadeh</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/shared.css" />
-<link rel="stylesheet" type="text/css" href="css/index.css" />
-</head>
-<body>
-  <header>
-    <h1 id="header">
-      <span id="front-end" class="my-name-is type">Hi my name is</span>
-      Mustafa Shehadeh
-      <span id="back-end" class="my-name-is type"></span>
-    </h1>
-  </header>
-  <div class="svg-holder">
-    <a href="mailto:shehadeh.mustafa@gmail.com" style="margin-left:5%; margin-right:5%;">
-      <img src="img/gmail.svg"  alt="my Email">
-    </a>
-    <a href="https://nz.linkedin.com/in/shehadehmustafa">
-      <img src="img/linkedin.svg" alt="Linkedin">
-    </a>
-  </div>
-<script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/index.js"></script>
-</body>
+<html lang="en">
+   <head>
+      <title>Mustafa Shehadeh</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="css/index.css" />
+   </head>
+   <body>
+      <header aria-description="The header has spans that cycle through some content, safe to be skipped as its not important info">
+         <h1 id="header">
+            <span id="front" class="my-name-is type">Hi my name is</span>
+            Mustafa Shehadeh
+            <span id="back" class="my-name-is type"></span>
+         </h1>
+      </header>
+      <main>
+         <h2>Hi, I'm Mustafa!</h2>
+         <p>By Day, I am a frontend engineer at Canva, focusing on design & productivity. I write code to help users make awesome designs faster! I knew I wanted to be a coder from the first for loop I wrote.</p>
+         <p>Outside of work, I love hiking, cooking and reading. I try to avoid Twitter because I have a terrible habit of <a href="https://en.wikipedia.org/wiki/Doomscrolling">doom scrolling </a>. Any tips on how to stop? </p>
+         <p>I passionately believe in volunteering for the community. As corny as it sounds, I think that we all have to give back and make a difference where we can. My main work comes with <a href="https://www.instagram.com/nzeidday">NZ Eid Day</a>, where I run the marketing team and do some projecting managing.</p>
+      </main>
+      <section>
+         <h3>Lets play a game?</h3>
+         <p>Have you heard of two truths and a lie? Well..... it's easy. All you need to do is pick the lie</p>
+         <div>
+            <ul class="cards">
+               <li>
+                  <div class="card" role="button">
+                     <div class="card__inner">
+                        <div class="card__front">
+                           <p> I've been hit by two cars.</p>
+                        </div>
+                        <div class="card__back wrong">
+                           <h5>Wrong! </h5>
+                           <p>This actually happened. can you believe it? I always look both ways now </p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="card"  role="button">
+                     <div class="card__inner">
+                        <div class="card__front">
+                           <p> I've been hit by a camel.</p>
+                        </div>
+                        <div class="card__back correct">
+                           <h5>Correct!</h5>
+                           <p>This was the lie! who gets hit by a camel? not me because i've only fallen off a camel.</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="card" role="button">
+                     <div class="card__inner">
+                        <div class="card__front">
+                           <p>I've been hit by a scooter.</p>
+                        </div>
+                        <div class="card__back wrong">
+                           <h5>Wrong! </h5>
+                           <p>This is actually true! I was hit by a scooter in greece on my very last day. </p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <footer>
+         <p>Contact me at    <a href="mailto:shehadeh.mustafa@gmail.com">
+            shehadeh.mustafa@gmail.com
+            </a> 
+         </p>
+         <h4>Find me at</h4>
+         <ul class="svg-holder">
+            <li>
+               <a href="https://www.goodreads.com/user/show/141143112-mustafa" >
+               <img src="img/goodreads.svg"  alt="my good reads" class="goodreads">
+               </a>
+            </li>
+            <li>
+               <a href="https://nz.linkedin.com/in/shehadehmustafa">
+               <img src="img/linkedin.svg" alt="Linkedin">
+               </a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/mustafa_shehadeh_/">
+               <img src="img/instagram.svg" alt="instagram">
+               </a>
+            </li>
+         </ul>
+      </footer>
+      <script src="js/index.js"></script>
+   </body>
 </html>
