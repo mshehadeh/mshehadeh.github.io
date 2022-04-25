@@ -170,10 +170,6 @@ li:not(:last-child) {
 
 
 @media only screen and (max-device-width: 480px) {
-  .card p {
-    font-size: 2em;
-  }
-
   header {
     min-height: 200px;
   }
