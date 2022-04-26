@@ -178,3 +178,13 @@ li:not(:last-child) {
     margin: 2em 0;
   }
 }
+
+
+@media only screen and (max-device-width: 380px) {
+  
+  header h1 {
+    margin: 4em 0;
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
